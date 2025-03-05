@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Estático Interactivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-center text-3xl font-bold">Mi Sitio Web</h1>
+            <nav>
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+                    <li><a href="#nosotros" class="hover:underline">Nosotros</a></li>
+                    <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+                </ul>
+                <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+            </nav>
+        </div>
+        <ul id="mobileMenu" class="hidden bg-blue-700 text-center space-y-2 p-4 md:hidden">
+            <li><a href="#inicio" class="block hover:underline">Inicio</a></li>
+            <li><a href="#servicios" class="block hover:underline">Servicios</a></li>
+            <li><a href="#nosotros" class="block hover:underline">Nosotros</a></li>
+            <li><a href="#contacto" class="block hover:underline">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- Secciones -->
+    <main>
+        <section id="inicio" class="bg-white py-20 text-center">
+            <h2 class="text-4xl font-bold">Bienvenido a nuestro sitio</h2>
+            <p class="mt-4 text-lg">Explora nuestros servicios y conoce más sobre nosotros.</p>
+        </section>
+
+        <section id="servicios" class="py-20 bg-gray-200">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2">Servicio 1</h3>
+                        <p>Diseño Web.</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-700" 
+                                onclick="cambiarTexto('Servicio 1 actualizado')">
+                            Más info
+                        </button>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2">Servicio 2</h3>
+                        <p>Branding.</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-700" 
+                                onclick="cambiarTexto('Servicio 2 actualizado')">
+                            Más info
+                        </button>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2">Servicio 3</h3>
+                        <p>Desarrollo Web.</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-700" 
+                                onclick="cambiarTexto('Servicio 3 actualizado')">
+                            Más info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="py-20 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
+                <p class="max-w-2xl mx-auto">Somos un equipo dedicado a ofrecer los mejores servicios y soluciones a nuestros clientes.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white p-4 text-center">
+        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

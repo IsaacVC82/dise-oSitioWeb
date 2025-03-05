@@ -13,9 +13,9 @@ Tecnologías Utilizadas
  Estructura del Proyecto
 
 
-├── index.html
-├── script.js
-└── README.md
+index.html
+script.js
+README.md
 index.html: Contiene la estructura principal del sitio web.
 script.js: Añade interactividad básica.
 README.md: Documentación del proyecto.
